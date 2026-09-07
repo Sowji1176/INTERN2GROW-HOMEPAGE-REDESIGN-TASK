@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intern2Grow — Build Skills. Gain Experience.</title>
+<meta name="description" content="Intern2Grow offers free, remote virtual internships with real tasks — helping you build practical skills, gain work experience, and become job-ready.">
+<meta property="og:title" content="Intern2Grow — Build Skills. Gain Experience.">
+<meta property="og:description" content="Free, remote virtual internships with real tasks across software development, design, data, and more.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<header id="header">
+  <div class="nav-wrap">
+    <a href="#top" class="brand" aria-label="Intern2Grow Home">
+      <img src="assets/images.jpg" alt="Intern2Grow" class="brand-logo">
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#top" class="nav-link">Home</a>
+      <div class="nav-item dropdown">
+        <button class="nav-link dropdown-toggle" aria-expanded="false">Programs</button>
+        <div class="dropdown-menu">
+          <a href="https://intern2grow.pages.dev/programs" target="_blank" rel="noopener">Basic Programs</a>
+          <a href="https://intern2grow.pages.dev/professional-programs" target="_blank" rel="noopener">Professional Programs</a>
+        </div>
+      </div>
+      <div class="nav-item dropdown">
+        <button class="nav-link dropdown-toggle" aria-expanded="false">Resources</button>
+        <div class="dropdown-menu">
+          <a href="https://intern2grow.pages.dev/challenges/frontend" target="_blank" rel="noopener">Frontend Challenges</a>
+          <a href="https://intern2grow.pages.dev/courses" target="_blank" rel="noopener">External Courses</a>
+          <a href="https://intern2grow.pages.dev/certificate-courses" target="_blank" rel="noopener">Certificate Courses</a>
+          <a href="https://intern2grow.pages.dev/skill-tests" target="_blank" rel="noopener">Test Your Skills</a>
+          <a href="https://intern2grow.pages.dev/blog" target="_blank" rel="noopener">Blog Articles</a>
+          <a href="https://intern2grow.pages.dev/open-positions" target="_blank" rel="noopener">Open Positions</a>
+        </div>
+      </div>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#faq" class="nav-link">FAQs</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" aria-pressed="false">
+        <span class="theme-icon" id="themeIcon">&#9728;</span>
+      </button>
+      <a href="https://intern2grow.pages.dev/contact" target="_blank" rel="noopener" class="btn-outline nav-contact-btn">Contact</a>
+      <a href="https://intern2grow.pages.dev/programs" target="_blank" rel="noopener" class="btn-primary nav-cta-btn">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#top" class="mobile-link">Home</a>
+  <div class="mobile-group">
+    <span class="mobile-group-label">Programs</span>
+    <a href="https://intern2grow.pages.dev/programs" target="_blank" rel="noopener" class="mobile-link">Basic Programs</a>
+    <a href="https://intern2grow.pages.dev/professional-programs" target="_blank" rel="noopener" class="mobile-link">Professional Programs</a>
+  </div>
+  <div class="mobile-group">
+    <span class="mobile-group-label">Resources</span>
+    <a href="https://intern2grow.pages.dev/challenges/frontend" target="_blank" rel="noopener" class="mobile-link">Frontend Challenges</a>
+    <a href="https://intern2grow.pages.dev/courses" target="_blank" rel="noopener" class="mobile-link">External Courses</a>
+    <a href="https://intern2grow.pages.dev/certificate-courses" target="_blank" rel="noopener" class="mobile-link">Certificate Courses</a>
+    <a href="https://intern2grow.pages.dev/skill-tests" target="_blank" rel="noopener" class="mobile-link">Test Your Skills</a>
+    <a href="https://intern2grow.pages.dev/blog" target="_blank" rel="noopener" class="mobile-link">Blog Articles</a>
+    <a href="https://intern2grow.pages.dev/open-positions" target="_blank" rel="noopener" class="mobile-link">Open Positions</a>
+  </div>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#faq" class="mobile-link">FAQs</a>
+  <button class="theme-toggle mobile-theme-toggle" id="themeToggleMobile" aria-label="Switch to dark mode" aria-pressed="false">
+    <span class="theme-icon" id="themeIconMobile">&#9728;</span>
+    <span id="themeLabelMobile">Light Mode</span>
+  </button>
+  <a href="https://intern2grow.pages.dev/contact" target="_blank" rel="noopener" class="btn-outline full-width">Contact</a>
+  <a href="https://intern2grow.pages.dev/programs" target="_blank" rel="noopener" class="btn-primary full-width">Get Started</a>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <span class="badge">&#9733; Free &middot; Remote &middot; Real Tasks</span>
+        <h1>BUILD SKILLS.<br>GAIN EXPERIENCE.<br><span class="accent-text">GROW YOUR CAREER.</span></h1>
+        <p class="hero-sub">Intern2Grow provides free, remote virtual internships with real tasks — helping you build practical, job-ready skills across software development, design, data, and more.</p>
+        <div class="hero-actions">
+          <a href="https://intern2grow.pages.dev/programs" target="_blank" rel="noopener" class="btn-primary btn-lg">Explore Internships</a>
+          <a href="https://intern2grow.pages.dev/professional-programs" target="_blank" rel="noopener" class="btn-outline btn-lg">Explore Programs</a>
+        </div>
+        <div class="hero-trust">
+          <span><strong>7,374+</strong> Learners</span>
+          <span class="dot">&middot;</span>
+          <span>Free</span>
+          <span class="dot">&middot;</span>
+          <span>Remote</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="float-card card-program">
+          <span class="card-icon">&#128187;</span>
+          <div><strong>React.js Developer</strong><span>Program</span></div>
+        </div>
+        <div class="float-card card-progress">
+          <span class="card-icon">&#9989;</span>
+          <div><strong>Task Completed</strong><span>4 of 4 steps</span></div>
+        </div>
+        <div class="float-card card-cert">
+          <span class="card-icon">&#127942;</span>
+          <div><strong>Certificate Ready</strong><span>Add to LinkedIn</span></div>
+        </div>
+        <div class="pill-row">
+          <span class="pill">Real Tasks</span>
+          <span class="pill">Remote</span>
+          <span class="pill">Free</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST STRIP ===== -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-row reveal">
+        <div class="trust-item"><strong>7,374+</strong><span>Learners</span></div>
+        <div class="trust-item"><strong>Free</strong><span>No cost, ever</span></div>
+        <div class="trust-item"><strong>Remote</strong><span>From anywhere</span></div>
+        <div class="trust-item"><strong>Real Tasks</strong><span>Not simulations</span></div>
+        <div class="trust-item"><strong>Flexible</strong><span>Start anytime</span></div>
+        <div class="trust-item"><strong>Certificate</strong><span>On completion</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY INTERN2GROW ===== -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Value</span>
+        <h2>Why Intern2Grow?</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <span class="feature-icon">&#128295;</span>
+          <h3>Real Tasks</h3>
+          <p>Work on tasks that mirror real projects, not hypothetical exercises — the kind of work you'd actually do in a job.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">&#127760;</span>
+          <h3>Fully Remote</h3>
+          <p>Join from anywhere in the world. There's no location requirement to participate.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">&#9200;</span>
+          <h3>Flexible Start</h3>
+          <p>Apply and begin an internship at any time — there's no fixed intake schedule to wait for.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">&#128176;</span>
+          <h3>Completely Free</h3>
+          <p>There's no cost to apply or to complete an internship program.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">&#128200;</span>
+          <h3>Skill Development</h3>
+          <p>Build practical, hands-on experience that directly strengthens your resume and portfolio.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">&#127894;</span>
+          <h3>Certificate on Completion</h3>
+          <p>Receive a certificate once you complete your tasks — ready to add to your resume or LinkedIn profile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS ===== -->
+  <section class="programs-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Explore Programs</span>
+        <h2>Choose your path.</h2>
+      </div>
+      <div class="program-grid" id="programGrid"></div>
+      <div class="view-all-wrap">
+        <a href="https://intern2grow.pages.dev/programs" target="_blank" rel="noopener" class="btn-outline">View All Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Process</span>
+        <h2>How It Works</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-step reveal">
+          <span class="step-num">01</span>
+          <h3>Explore Programs</h3>
+          <p>Browse the available internship programs and find one that matches your goals.</p>
+        </div>
+        <div class="timeline-step reveal">
+          <span class="step-num">02</span>
+          <h3>Choose an Internship</h3>
+          <p>Apply with simple details — no complex application process required.</p>
+        </div>
+        <div class="timeline-step reveal">
+          <span class="step-num">03</span>
+          <h3>Complete Tasks</h3>
+          <p>Receive your tasks by email and work through them at your own pace.</p>
+        </div>
+        <div class="timeline-step reveal">
+          <span class="step-num">04</span>
+          <h3>Submit Your Work</h3>
+          <p>Submit your completed tasks through the link provided in your email.</p>
+        </div>
+        <div class="timeline-step reveal">
+          <span class="step-num">05</span>
+          <h3>Receive Your Certificate</h3>
+          <p>Get your certificate of completion, ready to add to your resume or LinkedIn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEARNING ECOSYSTEM ===== -->
+  <section class="ecosystem-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Beyond Internships</span>
+        <h2>More Ways to Grow</h2>
+      </div>
+      <div class="ecosystem-grid">
+        <a href="https://intern2grow.pages.dev/courses" target="_blank" rel="noopener" class="ecosystem-card reveal">
+          <span class="feature-icon">&#128218;</span>
+          <h3>Courses</h3>
+          <p>Build knowledge beyond your internship with practical learning resources.</p>
+        </a>
+        <a href="https://intern2grow.pages.dev/challenges/frontend" target="_blank" rel="noopener" class="ecosystem-card reveal">
+          <span class="feature-icon">&#9889;</span>
+          <h3>Frontend Challenges</h3>
+          <p>Practice your skills through hands-on coding challenges.</p>
+        </a>
+        <a href="https://intern2grow.pages.dev/skill-tests" target="_blank" rel="noopener" class="ecosystem-card reveal">
+          <span class="feature-icon">&#9989;</span>
+          <h3>Skill Tests</h3>
+          <p>Test your knowledge and identify areas to improve.</p>
+        </a>
+        <a href="https://intern2grow.pages.dev/certificate-courses" target="_blank" rel="noopener" class="ecosystem-card reveal">
+          <span class="feature-icon">&#127891;</span>
+          <h3>Certificate Courses</h3>
+          <p>Complete structured learning and earn certificates.</p>
+        </a>
+        <a href="https://intern2grow.pages.dev/blog" target="_blank" rel="noopener" class="ecosystem-card reveal">
+          <span class="feature-icon">&#9998;</span>
+          <h3>Blog</h3>
+          <p>Explore practical insights for learning and career growth.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIAL ===== -->
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">From Our Community</span>
+        <h2>What Interns Say</h2>
+      </div>
+      <div class="testimonial-card reveal">
+        <p class="testimonial-quote">&ldquo;It was a unique experience, and what makes the training more effective is that the tasks depend on adding features to already developed projects. This improves the experience much better than developing from A:Z.&rdquo;</p>
+        <div class="testimonial-person">
+          <span class="avatar-fallback">ME</span>
+          <div><strong>Mustafa Eisa</strong><span>Frontend Developer</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about-section">
+    <div class="container about-inner reveal">
+      <span class="eyebrow">About Intern2Grow</span>
+      <h2>A platform built around practical experience.</h2>
+      <p>Intern2Grow is a virtual internship programs provider. We offer free, remote virtual internships with real tasks — giving you the chance to work on real projects, gain genuine work experience, and become job-ready, no matter where you're located.</p>
+      <a href="https://intern2grow.pages.dev/team" target="_blank" rel="noopener" class="btn-outline">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Questions</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item reveal">
+          <button class="faq-q">What is Intern2Grow? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Intern2Grow is a virtual internship programs provider, where we offer virtual internships with real tasks — here you can work on some real projects to gain work experience, and be job-ready.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">Why should I join Intern2Grow? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Intern2Grow can help you improve your skills by working on real tasks, so it can boost your chance to find a job.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">What is the meaning of a virtual internship? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>A virtual internship is an internship that can be done virtually from anywhere to simulate a real internship.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">Can I add Intern2Grow to my LinkedIn and Resume? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Yes, you can — but don't forget to write a description about your tasks and how you managed to solve them.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">When can I apply? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>You can apply and start your virtual internship at any time.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">Can I take more than one internship? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Yes, you can enjoy as many internships as you want.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">Is there any deadline for tasks? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Every internship has its own preferred period, but it's okay if you need more time.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta-section">
+    <div class="container">
+      <div class="final-cta-inner reveal">
+        <h2>Ready to build real experience?</h2>
+        <p>Start your journey with practical tasks, flexible virtual internships, and opportunities to grow your skills.</p>
+        <div class="hero-actions final-cta-actions">
+          <a href="https://intern2grow.pages.dev/programs" target="_blank" rel="noopener" class="btn-primary btn-lg">Explore Internships</a>
+          <a href="https://intern2grow.pages.dev/professional-programs" target="_blank" rel="noopener" class="btn-outline btn-lg">Explore Programs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images.jpg" alt="Intern2Grow" class="footer-logo">
+        <p>Intern2Grow is a virtual internship programs provider, where we offer virtual internships with real tasks — here you can work on real projects to gain work experience, and be job-ready.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="https://intern2grow.pages.dev/programs" target="_blank" rel="noopener">Basic Programs</a>
+        <a href="https://intern2grow.pages.dev/professional-programs" target="_blank" rel="noopener">Professional Programs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="https://intern2grow.pages.dev/challenges/frontend" target="_blank" rel="noopener">Frontend Challenges</a>
+        <a href="https://intern2grow.pages.dev/courses" target="_blank" rel="noopener">External Courses</a>
+        <a href="https://intern2grow.pages.dev/certificate-courses" target="_blank" rel="noopener">Certificate Courses</a>
+        <a href="https://intern2grow.pages.dev/skill-tests" target="_blank" rel="noopener">Test Your Skills</a>
+        <a href="https://intern2grow.pages.dev/blog" target="_blank" rel="noopener">Blog Articles</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="https://intern2grow.pages.dev/team" target="_blank" rel="noopener">Our Team</a>
+        <a href="https://intern2grow.pages.dev/partners" target="_blank" rel="noopener">Partners</a>
+        <a href="https://intern2grow.pages.dev/achievements" target="_blank" rel="noopener">Achievements</a>
+        <a href="https://intern2grow.pages.dev/open-positions" target="_blank" rel="noopener">Open Positions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#faq">FAQs</a>
+        <a href="https://intern2grow.pages.dev/contact" target="_blank" rel="noopener">Contact</a>
+        <a href="https://intern2grow.pages.dev/certificate/verify" target="_blank" rel="noopener">Verify Certificate</a>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/intern2grow/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/interntwogrow" target="_blank" rel="noopener">Facebook</a>
+      <a href="mailto:intern2grow@gmail.com">Email</a>
+      <a href="https://www.producthunt.com/posts/intern2grow" target="_blank" rel="noopener">Product Hunt</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Intern2Grow. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">&uarr;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
