@@ -6,7 +6,7 @@ The redesign focuses on improving the homepage layout, visual hierarchy, navigat
 
 ## 🌐 Visit the Live Website
 
-👉 Visit the Live Website: 
+👉 Visit the Live Website: https://sowji1176.github.io/INTERN2GROW-HOMEPAGE-REDESIGN-TASK/
 
 ## 📌 Project Overview
 
